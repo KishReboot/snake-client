@@ -1,4 +1,4 @@
-const stdin = require('process')
+const stdin = require('process');
 const { movement, msgs } = require('./constants');
 
 let connection;
