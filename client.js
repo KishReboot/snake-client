@@ -3,7 +3,7 @@ const net = require('net');
 const PORT = '50541';
 const IP = '165.227.47.243';
 
-const connect = function () {
+const connect = function() {
 
   const conn = net.createConnection({
 
@@ -22,18 +22,12 @@ const connect = function () {
 
   conn.on('connect', () => {
 
-    console.log('Connected');
     conn.write("Name: Rus");
 
   });
-  
-
 
   return conn;
 
 };
 
-module.exports = {
-  connect, 
-  
-};
+module.exports = { connect };
