@@ -5,7 +5,7 @@ const connection = connect();
 
 console.log('Connecting . . .');
 
-
 setupInput(connection);
 
-module.exports = { connect };
+console.log('Connected');
+
